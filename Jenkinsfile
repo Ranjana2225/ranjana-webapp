@@ -1,12 +1,12 @@
 pipeline{
-  agen any
+  agent any
   tools{
     maven 'Maven'
   }
   stages{
     stage('Checkout'){
       steps{
-        git branch:'master'
+        git branch:'master',
         url:'https://github.com/Ranjana2225/ranjana-webapp.git'
       }
     }
