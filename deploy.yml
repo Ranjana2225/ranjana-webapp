@@ -1,0 +1,8 @@
+- hosts: localhost
+  become: yes
+  tasks:
+  - name: coping war file to TOMCAT
+    copy:
+        src: target/ranjana-webapp.war
+        dest: /opt/tomcat/webapps/ranjana-webapp.war
+          
