@@ -1,5 +1,4 @@
 - hosts: localhost
-  become: yes
   tasks:
   - name: coping war file to TOMCAT
     copy:
